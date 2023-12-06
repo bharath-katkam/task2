@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OTP verification</title>
+<style>
+body {
+ background-color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.a {
+ background-color: #f9f9f9;
+ width : 30%;
+ height :40%;
+ margin : 0;
+ padding : 10px;
+}
+h2 {
+    
+      background: linear-gradient(to right, #d472db, #3722bd);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 10px;
+    
+  text-align: center;
+}
+.input-group input[type="text"]
+ {
+ 
+  width: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, #d472db, #3722bd);
+  color: #fff;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(to right, #2980b9, #45a049);
+}
+</style>
+</head>
+<body>
+<div class="a">
+  <h2>OTP Verification</h2>
+  <p>Enter the verification code we just sent on your email adress </p>
+  <form action="create password.html">
+ <div class="input-group"> 
+    <input type="text" id="part1" name="part1" maxlength="1" pattern="[0-9]{1}"  required>
+    
+  
+    <input type="text" id="part2" name="part2" maxlength="1" pattern="[0-9]{1}"  required>
+    
+    
+    <input type="text" id="part3" name="part3" maxlength="1" pattern="[0-9]{1}"  required>
+
+    <input type="text" id="part4" name="part4" maxlength="1" pattern="[0-9]{1}"  required>
+</div>
+<br>
+    <input type="submit" value="Verify" class="submit-btn">
+  </form>
+</div>
+</body>
+</html>

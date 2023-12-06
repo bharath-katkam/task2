@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Registration</title>
+  <style>
+.a {
+ background-color: #f9f9f9;
+ width : 30%;
+ height :70%;
+ margin : 0;
+ padding : 10px;
+}
+
+body {
+ background-color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ 
+}
+
+h2 {
+    
+      background: linear-gradient(to right, #d472db, #3722bd);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 10px;
+    
+  text-align: center;
+}
+
+
+
+.input-group {
+  margin-bottom: 15px;
+}
+  
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input[type="text"],
+.input-group input[type="email"],
+.input-group input[type="tel"],
+.input-group input[type="password"]
+ {
+  width: 90%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, #d472db, #3722bd); /* Blue to Green gradient */
+  color: #fff;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(to right, #2980b9, #45a049); /* Darker shades on hover */
+}
+ #options {
+      width: 100%;
+</style>
+</head>
+<body>
+<div class="a">
+  <h2>Register to get started!</h2>
+  <form >
+
+    <div class="input-group">
+        <input type="text" id="username" name="username" placeholder="User name" required>
+    </div>
+
+    <div class="input-group">
+      <input type="email" id="email" name="email" placeholder="E-mail" required>
+    </div>
+
+<div class="input-group">
+      <input type="tel" id="contact" name="contact" pattern="[0-9]{10}" placeholder="Contact" required>
+    </div>
+
+    <div class="input-group">
+         <input type="password" id="password" name="password" placeholder="Password" required>
+    </div>
+
+    <div class="input-group">
+      <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm password" required>
+  
+  <br>
+  <br>
+  <select id="options" onchange="showSelected()">
+    <option value="" disabled selected>Select guide</option>
+    <option value="option1">Product guide</option>
+    <option value="option2">Travel guide</option>
+    
+  </select>
+     
+    </div>
+    <div class="input-group">
+      <input type="submit" value="Register" class="submit-btn">
+    </div>
+
+  </form>
+
+  
+<span>Already have an account? <a href="login.html">Login now</a> </span>
+</div>
+
+</body>
+</html>
